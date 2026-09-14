@@ -24,7 +24,7 @@ public class SnackbarService
         CornerRadiusService cornerRadiusService,
         TextFontService fontService,
         ColorService colorService,
-        IInstanceRepository<UISettings> settings)
+        IInstanceStore<UISettings> settings)
     {
         _cornerRadiusService = cornerRadiusService;
         _fontService = fontService;

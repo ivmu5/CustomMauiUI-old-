@@ -15,7 +15,7 @@ public class LanguageService : UiServiceBase<LanguageService>
 
 
 
-    public LanguageService(IInstanceRepository<UISettings> settings)
+    public LanguageService(IInstanceStore<UISettings> settings)
         : base(settings)
     {
         SetCulture(_settings.Get().Language);

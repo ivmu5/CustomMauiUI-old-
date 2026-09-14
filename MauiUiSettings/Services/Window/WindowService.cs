@@ -85,7 +85,7 @@ public class WindowService : UiServiceBase<WindowService>, IDisposable
 
     #region Constructor
 
-    public WindowService(IInstanceRepository<UISettings> settings)
+    public WindowService(IInstanceStore<UISettings> settings)
         : base(settings)
     {
     }

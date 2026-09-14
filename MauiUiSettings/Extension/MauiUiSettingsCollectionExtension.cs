@@ -42,7 +42,7 @@ public static class MauiUiSettingsCollectionExtension
 
     public async static Task InitUiSettings(this IServiceProvider services)
     {
-        var repo = services.GetRequiredService<IInstanceRepository<UISettings>>();
+        var repo = services.GetRequiredService<IInstanceStore<UISettings>>();
         await repo.InitAsync();
         await repo.Get().EnsureCreatedAsync(x => x.Colors);
     }

@@ -4,7 +4,7 @@ namespace MauiUiSettings;
 
 public class UiServiceStore
 {
-    public readonly IInstanceRepository<UISettings> UISettings;
+    public readonly IInstanceStore<UISettings> UISettings;
     public readonly ThemeService ThemeService;
     public readonly ColorService ColorService;
     public readonly TextFontService FontService;
@@ -16,7 +16,7 @@ public class UiServiceStore
     public readonly WindowService WindowService;
 
     public UiServiceStore(
-        IInstanceRepository<UISettings> uiSettings,
+        IInstanceStore<UISettings> uiSettings,
         ThemeService themeService,
         ColorService colorService,
         TextFontService fontService,

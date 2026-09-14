@@ -21,6 +21,6 @@ public class BaseFontService<TService> : UiServiceBase<TService>, IFontService
     public Microsoft.Maui.Font CurrentFont => Microsoft.Maui.Font.OfSize(FontFamily, FontSize);
     public Microsoft.Maui.Font CurrentFontBold => Microsoft.Maui.Font.OfSize(FontFamily, FontSize, FontWeight.Bold);
 
-    public BaseFontService(IInstanceRepository<UISettings> settings)
+    public BaseFontService(IInstanceStore<UISettings> settings)
         : base(settings) { }
 }

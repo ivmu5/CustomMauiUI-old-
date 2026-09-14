@@ -7,7 +7,7 @@ public class TextFontService : BaseFontService<TextFontService>, IDisposable
     public const double DefaultFontSize = 14;
     public const string DefaultFontFamily = DefaultFonts.GardensCM;
 
-    public TextFontService(IInstanceRepository<UISettings> settings)
+    public TextFontService(IInstanceStore<UISettings> settings)
         : base(settings)
     {
         var uiSettings = _settings.Get();

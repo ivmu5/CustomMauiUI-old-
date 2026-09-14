@@ -17,7 +17,7 @@ public class ThemeService : UiServiceBase<ThemeService>, IDisposable
 
 
 
-    public ThemeService(IInstanceRepository<UISettings> settings)
+    public ThemeService(IInstanceStore<UISettings> settings)
         : base(settings)
     {
         ApplyTheme(CurrentTheme = settings.Get().ThemeType);

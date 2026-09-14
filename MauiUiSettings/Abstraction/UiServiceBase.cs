@@ -4,10 +4,10 @@ namespace MauiUiSettings;
 
 public abstract class UiServiceBase<TService> : BindableObject
 {
-    protected readonly IInstanceRepository<UISettings> _settings;
+    protected readonly IInstanceStore<UISettings> _settings;
 
 
-    public UiServiceBase(IInstanceRepository<UISettings> settings)
+    public UiServiceBase(IInstanceStore<UISettings> settings)
         => _settings = settings;
 
     public async Task SaveAsync()

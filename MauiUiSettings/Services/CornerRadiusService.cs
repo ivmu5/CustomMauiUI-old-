@@ -25,7 +25,7 @@ public class CornerRadiusService : UiServiceBase<CornerRadiusService>
 
 
 
-    public CornerRadiusService(IInstanceRepository<UISettings> settings)
+    public CornerRadiusService(IInstanceStore<UISettings> settings)
         : base(settings)
     {
         ApplyCornerRadius(_settings.Get().CornerRadius);

@@ -16,7 +16,7 @@ public class IconFontService : BaseFontService<IconFontService>, IDisposable
 
 
     public IconFontService(
-        IInstanceRepository<UISettings> settings,
+        IInstanceStore<UISettings> settings,
         CornerRadiusService cornerRadiusService)
         : base(settings)
     {

@@ -58,7 +58,7 @@ public class ColorService : UiServiceBase<ColorService>, IDisposable
 
 
     public ColorService(
-        IInstanceRepository<UISettings> settings,
+        IInstanceStore<UISettings> settings,
         ThemeService themeService)
         : base(settings)
     {
